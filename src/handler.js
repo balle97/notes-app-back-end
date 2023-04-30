@@ -1,6 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-unused-vars */
-/* eslint-disable linebreak-style */
 const {nanoid} = require('nanoid');
 const notes = require('./notes');
 
@@ -111,5 +108,4 @@ const deleteNoteByIdHandler = (request, h) => {
   return response;
 };
 
-// eslint-disable-next-line max-len
 module.exports = {addNoteHandler, getAllNotesHandler, getNoteByIdHandler, editNoteByIdHandler, deleteNoteByIdHandler};

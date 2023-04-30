@@ -1,16 +1,9 @@
-/* eslint-disable linebreak-style */
-// eslint-disable-next-line max-len
 const {addNoteHandler, getAllNotesHandler, getNoteByIdHandler, editNoteByIdHandler, deleteNoteByIdHandler} = require('./handler');
 const routes = [
   {
     method: 'POST',
     path: '/notes',
     handler: addNoteHandler,
-    options: {
-      cors: {
-        origin: ['*'],
-      },
-    },
   },
   {
     method: 'GET',
@@ -20,19 +13,16 @@ const routes = [
   {
     method: 'GET',
     path: '/notes/{id}',
-    handler: () => {},
     handler: getNoteByIdHandler,
   },
   {
     method: 'PUT',
     path: '/notes/{id}',
-    handler: () => {},
     handler: editNoteByIdHandler,
   },
   {
     method: 'DELETE',
     path: '/notes/{id}',
-    handler: () => {},
     handler: deleteNoteByIdHandler,
   },
 ];
